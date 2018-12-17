@@ -32,26 +32,5 @@ const reducer: IReducer = (state: IState | undefined = initialState, action: IAc
    return result;
 }
 
-// // export const store = new createStore(reducer.bind(this), initialState);
 export const store: Store<IState> = createStore(reducer);
 
-// export const onSearch: IHandler = (text: string): void => {
-//   const action = { type: "onSearch" };
-//   condition.search = text;
-//   store.dispatch(action);
-// };
-
-// export const onAddLang: IHandler = (lang: string): void => {
-//   const action = { type: "onSearch" };
-//   if (condition.lang.some(item => item == lang)) return; // !!!
-//   condition.lang.push(lang);
-//   store.dispatch(action);
-// };
-
-// export const onRemoveLang: IHandler = (lang: string): void => {
-//   const action = { type: "onRemoveLang" };
-//   const index = condition.lang.indexOf(lang);
-//   if (index < 0) return;
-//   condition.lang.splice(index, 1);
-//   store.dispatch(action);
-// };

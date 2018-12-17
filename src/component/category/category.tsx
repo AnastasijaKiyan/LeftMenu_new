@@ -29,7 +29,8 @@ export default class Category extends React.Component<IProps, IState> {
   render() {
     return (
       <section className="leftmenu-category">
-        <div onClick={e => this.press(this.props.id, e)}>
+        <div className="leftmenu-category-block" onClick={e => this.press(this.props.id, e)}>
+          <div className="leftmenu-category-left-img"/>
           <div className="leftmenu-category-image" />
           <div className="leftmenu-category-title">
             <h1 className="leftmenu-category-title-name">{this.props.name}</h1>

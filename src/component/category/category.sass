@@ -13,36 +13,50 @@ $baseline: baseline
 .leftmenu-category
     display: $flex
     flex-wrap: $wrap
-    margin-left: $size-ten * 4.4 + px
+    padding-top: $size-ten * 2 + px
+    padding-bottom: $size-ten * 2 + px
     margin-bottom: $size-ten * 4 + px
     color: $color-white
     margin-bottom: $size-null
-    margin-top: $size-null
+    position: relative
 
-    
+    .leftmenu-category-block
 
-    .leftmenu-category-image
-        float: left
-        border-radius: 50%
-        background-color: $color-white
-        width: $size-ten * 4.2 + px
-        height: $size-ten * 4.2 + px
+
+        .leftmenu-category-left-img
+            background-color: $color-white
+            idth: $size-ten / 2.5 + px
+            border-radius: 0 8px 8px 0
+            top: $size-ten * 3.3 + px
+            bottom: $size-ten * 3.3 + px
+            position: absolute
+            padding-left: $size-null
+
+
+        .leftmenu-category-image
+            float: left
+            border-radius: 50%
+            background-color: $color-white
+            width: $size-ten * 4.2 + px
+            height: $size-ten * 4.2 + px
+            margin-left: $size-ten * 4.4 + px
+        
         
 
-    .leftmenu-category-title
-        float: left
-        margin-left: $size-ten * 4.4 + px
-        height: $size-ten * 3.3 + px
-        
-        .leftmenu-category-title-name
-            margin: $size-null
-            padding: $size-null
-            font-family: 'Ubuntu Medium'
-            font-size: $size-ten * 1.8 + px
-        
+        .leftmenu-category-title
+            float: left
+            margin-left: $size-ten * 4.4 + px
+            height: $size-ten * 3.3 + px
+            
+            .leftmenu-category-title-name
+                margin: $size-null
+                padding: $size-null
+                font-family: 'Ubuntu Medium'
+                font-size: $size-ten * 1.8 + px
+            
 
-        .leftmenu-category-title-sometext
-            color: $color-orange
-            font-size: $size-ten * 1.2 + px
-            margin-top: $size-ten * 0.8 + px
-            font-family: 'Ubuntu Light'
+            .leftmenu-category-title-sometext
+                color: $color-orange
+                font-size: $size-ten * 1.2 + px
+                margin-top: $size-ten * 0.8 + px
+                font-family: 'Ubuntu Light'
