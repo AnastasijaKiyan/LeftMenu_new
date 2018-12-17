@@ -1,0 +1,42 @@
+$size-null: 0
+$size-ten: 10
+$size-hundred: 100
+$color-white: #fff
+$color-orange: #b19432
+$bg-color-main: #12a099
+$flex: flex
+$wrap: wrap
+$none: none
+
+// @font-face 
+//   font-family: 'ubuntu-bold'
+//   src: url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.eot')
+//   src: url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.svg') format('svg')
+//   font-weight: medium
+//   font-style: normal
+
+.leftmenu-title
+  display: $flex
+  flex-wrap: $wrap
+  width: $size-hundred * 2.6 + px
+  height: $size-ten * 5 + px
+  margin-left: $size-ten * 4.4 + px
+  margin-top: $size-ten * 2.4 + px
+
+
+  .leftmenu-title-logo
+    float: left
+    width: $size-ten * 9.7 + px
+    height: $size-ten * 4.9 + px
+
+
+  .leftmenu-title-text
+    // font-family: 'ubuntu-bold'
+    font-size: $size-ten * 1.4 + px
+    float: right
+    text-transform: uppercase
+    color: $color-white
+    width: $size-ten * 10.3 + px
+    height: $size-ten * 2.9 + px
+    margin-top: $size-ten * 1.1 + px
+    margin-left: $size-ten * 2.3 + px
