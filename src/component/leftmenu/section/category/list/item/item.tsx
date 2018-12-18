@@ -1,9 +1,5 @@
 import React from "react";
-import { IItem } from "../../type/IItem";
-import { store } from '../../reducer/reducer'
-import { IState } from "../../type/IState";
-
-import "./item.sass";
+import { IState } from "../../../../../../type/IState";
 
 interface IProps {
   name: string

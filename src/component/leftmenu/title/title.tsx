@@ -1,5 +1,4 @@
 import React from 'react';
-import "./title.sass";
 
 const Title = (): JSX.Element | null => {
 

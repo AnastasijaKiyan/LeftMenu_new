@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { IState } from '../../type/IState';
-import * as Reducer from '../../reducer/reducer'
-import Item from '../item/item';
-import { IItem } from '../../type/IItem';
+import { IState } from '../../../../../type/IState';
+import * as Reducer from '../../../../../reducer/reducer'
+import Item from './item/item';
+import { IItem } from '../../../../../type/IItem';
 
 
 

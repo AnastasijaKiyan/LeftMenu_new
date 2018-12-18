@@ -1,9 +1,7 @@
 import React from "react";
-import Category from "../category/category";
-import { store } from '../../reducer/reducer'
-import { IState } from "../../type/IState";
-
-import "./section.sass";
+import Category from "./category/category";
+import { store } from '../../../reducer/reducer'
+import { IState } from "../../../type/IState";
 
 interface IProps { }
 

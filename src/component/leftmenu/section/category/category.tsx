@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import "./category.sass";
-import List from "../list/list";
-import { IState } from "../../type/IState";
-import * as Reducer from "../../reducer/reducer";
+import List from "../category/list/list";
+import { IState } from "../../../../type/IState";
+import * as Reducer from "../../../../reducer/reducer";
 
-import "./category.sass";
 
 interface IProps {
   id: number;
