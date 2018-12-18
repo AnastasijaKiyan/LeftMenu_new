@@ -5,6 +5,7 @@ $color-white: #fff
 $color-orange: #b19432
 $bg-color-main: #12a099
 $bg-color-main-active: #136c67
+$bg-color-onclick: #156662
 $flex: flex
 $wrap: wrap
 $none: none
@@ -12,6 +13,7 @@ $baseline: baseline
 
 .leftmenu-category
     display: $flex
+    flex-direction: column
     flex-wrap: $wrap
     padding-top: $size-ten * 2 + px
     padding-bottom: $size-ten * 2 + px
@@ -21,16 +23,18 @@ $baseline: baseline
     position: relative
 
     .leftmenu-category-block
+        
 
 
         .leftmenu-category-left-img
             background-color: $color-white
-            idth: $size-ten / 2.5 + px
+            width: $size-ten / 2.5 + px
             border-radius: 0 8px 8px 0
             top: $size-ten * 3.3 + px
             bottom: $size-ten * 3.3 + px
             position: absolute
-            padding-left: $size-null
+            left: $size-null
+            visibility: hidden
 
 
         .leftmenu-category-image

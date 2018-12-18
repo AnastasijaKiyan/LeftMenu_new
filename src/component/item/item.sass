@@ -10,14 +10,19 @@ $none: none
 
 
 .leftmenu-item
-
+  display: $flex
+  align-items: center
   color: $color-white
-  padding-left: $size-hundred * 0.85 + px
+  padding-left: $size-hundred * 1.28 + px
   width: $size-hundred * 3.2 - $size-hundred * 1.29 + px
-  height: $size-ten * 4 + px
+  height: $size-ten * 4.3 + px
   font-family: 'ubuntu-regular'
   font-size: $size-ten * 1.6 + px
 
+  &:nth-child(1)
+    margin-top: $size-ten *.4 + px
+
+ 
 
   &:hover
     color: $color-orange
