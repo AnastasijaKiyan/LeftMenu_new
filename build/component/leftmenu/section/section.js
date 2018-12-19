@@ -14,18 +14,19 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 var react_1 = require("react");
-var title_1 = require("./title/title");
-var section_1 = require("./section/section");
-var LeftMenu = /** @class */ (function (_super) {
-    __extends(LeftMenu, _super);
-    function LeftMenu(props) {
+var category_1 = require("./category/category");
+var reducer_1 = require("../../../reducer/reducer");
+var Section = /** @class */ (function (_super) {
+    __extends(Section, _super);
+    function Section(props) {
         return _super.call(this, props) || this;
     }
-    LeftMenu.prototype.render = function () {
-        return (react_1["default"].createElement("div", { className: "leftmenu-main" },
-            react_1["default"].createElement(title_1["default"], null),
-            react_1["default"].createElement(section_1["default"], null)));
+    Section.prototype.render = function () {
+        var state = reducer_1.store.getState();
+        return (react_1["default"].createElement("section", { className: "leftmenu-section" }, state.categories.map(function (category) {
+            return (react_1["default"].createElement(category_1["default"], { key: category.id, name: category.name, id: category.id }));
+        })));
     };
-    return LeftMenu;
-}(react_1.Component));
-exports["default"] = LeftMenu;
+    return Section;
+}(react_1["default"].Component));
+exports["default"] = Section;

@@ -10,10 +10,10 @@ $flex: flex
 $wrap: wrap
 $none: none
 
-html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
-  margin: $size-null
-  padding: $size-null
-  border: $size-null
+// html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
+//   margin: $size-null
+//   padding: $size-null
+//   border: $size-null
 
 // @font-face 
 //     font-family: 'ubuntu-regular'
@@ -41,92 +41,37 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
 //     font-style: normal
 
 .leftmenu-main
+  // display: $flex
+  // flex-wrap: $wrap
   background-color: $bg-color-main
   width: $size-hundred * 3.2 + px
   height: $size-hundred * 10.8 + px
 
-.leftmenu-title
-  display: $flex
-  flex-wrap: $wrap
-  width: $size-hundred * 2.6 + px
-  height: $size-ten * 5 + px
-  margin-left: $size-ten * 4.4 + px
-  padding-top: $size-ten * 2.4 + px
-
-
-  .leftmenu-title-logo
-    float: left
-    width: $size-ten * 9.7 + px
-    height: $size-ten * 4.9 + px
-
-
-  .leftmenu-title-text
-    font-family: 'ubuntu-bold'
-    font-size: $size-ten * 1.4 + px
-    float: right
-    text-transform: uppercase
-    color: $color-white
-    width: $size-ten * 10.3 + px
-    height: $size-ten * 2.9 + px
-    margin-top: $size-ten * 1.1 + px
-    margin-left: $size-ten * 2.3 + px
-
-
-  .leftmenu-section
+  .leftmenu-title
     display: $flex
     flex-wrap: $wrap
-    width: 100%
-    margin-top: $size-null
+    width: $size-hundred * 2.6 + px
+    height: $size-ten * 5 + px
+    margin-left: $size-ten * 4.4 + px
     padding-top: $size-ten * 2.4 + px
-    font-family: 'ubuntu-bold'
-    font-size: $size-ten * 1.4 + px
-    float: left
 
-.leftmenu-category
-  display: $flex
-  flex-direction: column
-  flex-wrap: $wrap
-  padding-top: $size-ten * 2 + px
-  padding-bottom: $size-ten * 2 + px
-  margin-bottom: $size-ten * 4 + px
-  color: $color-white
-  margin-bottom: $size-null
-  position: relative
 
-  .leftmenu-category-left-img
-    background-color: $color-white
-    width: $size-ten / 2.5 + px
-    border-radius: 0 8px 8px 0
-    top: $size-ten * 3.3 + px
-    bottom: $size-ten * 3.3 + px
-    position: absolute
-    left: $size-null
-
-    .leftmenu-category-image
+    .leftmenu-title-logo
       float: left
-      border-radius: 50%
-      background-color: $color-white
-      width: $size-ten * 4.2 + px
-      height: $size-ten * 4.2 + px
-      margin-left: $size-ten * 4.4 + px
+      width: $size-ten * 9.7 + px
+      height: $size-ten * 4.9 + px
 
-      .leftmenu-category-title
-        float: left
-        margin-left: $size-ten * 4.4 + px
-        height: $size-ten * 3.3 + px
-            
-        .leftmenu-category-title-name
-          margin: $size-null
-          padding: $size-null
-          font-family: 'Ubuntu Medium'
-          font-size: $size-ten * 1.8 + px
-            
 
-        .leftmenu-category-title-sometext
-          color: $color-orange
-          font-size: $size-ten * 1.2 + px
-          margin-top: $size-ten * 0.8 + px
-          font-family: 'Ubuntu Light'
+    .leftmenu-title-text
+      font-family: 'ubuntu-bold'
+      font-size: $size-ten * 1.4 + px
+      float: right
+      text-transform: uppercase
+      color: $color-white
+      width: $size-ten * 10.3 + px
+      height: $size-ten * 2.9 + px
+      margin-top: $size-ten * 1.1 + px
+      margin-left: $size-ten * 2.3 + px
 
 .leftmenu-section
   display: $flex
@@ -137,6 +82,55 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
   font-family: 'ubuntu-bold'
   font-size: $size-ten * 1.4 + px
   float: left
+
+  .leftmenu-category
+    display: $flex
+    flex-direction: column
+    flex-wrap: $wrap
+    padding-top: $size-ten * 2 + px
+    padding-bottom: $size-ten * 2 + px
+    margin-bottom: $size-ten * 4 + px
+    color: $color-white
+    margin-bottom: $size-null
+    position: relative
+
+    .leftmenu-category-block
+
+      .leftmenu-category-left-img
+        background-color: $color-white
+        width: $size-ten / 2.5 + px
+        border-radius: 0 8px 8px 0
+        top: $size-ten * 3.3 + px
+        bottom: $size-ten * 3.3 + px
+        position: absolute
+        left: $size-null
+
+      .leftmenu-category-image
+        float: left
+        border-radius: 50%
+        background-color: $color-white
+        width: $size-ten * 4.2 + px
+        height: $size-ten * 4.2 + px
+        margin-left: $size-ten * 4.4 + px
+
+      .leftmenu-category-title
+        float: left
+        margin-left: $size-ten * 4.4 + px
+        height: $size-ten * 3.3 + px
+                
+        .leftmenu-category-title-name
+          margin: $size-null
+          padding: $size-null
+          font-family: 'Ubuntu Medium'
+          font-size: $size-ten * 1.8 + px
+                
+
+        .leftmenu-category-title-sometext
+          color: $color-orange
+          font-size: $size-ten * 1.2 + px
+          margin-top: $size-ten * 0.8 + px
+          font-family: 'Ubuntu Light'
+
 
 .leftmenu-item
   display: $flex
@@ -149,11 +143,6 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
   font-size: $size-ten * 1.6 + px
 
   
-  .leftmenu-item-text
-    
-
-
-
   &:hover
     color: $color-orange
 

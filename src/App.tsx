@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import LeftMenu from './component/leftmenu/leftmenu';
 import { IState } from './type/IState';
-import * as Reducer from './reducer/reducer'
+import * as Reducer from './reducer/reducer';
 
 import "./index.sass";
 
