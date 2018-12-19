@@ -15,30 +15,30 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
   padding: $size-null
   border: $size-null
 
-// @font-face 
-//     font-family: 'ubuntu-regular'
-//     src: url('./style/font/Ubuntu/Ubuntu-Regular/Ubuntu-Regular.eot')
-//     src: url('./style/font/Ubuntu/Ubuntu-Regular/Ubuntu-Regular.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Regular/Ubuntu-Regular.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Regular/Ubuntu-Regular.svg') format('svg')
-//     font-weight: normal
-//     font-style: normal
-// @font-face 
-//     font-family: 'ubuntu-light'
-//     src: url('./style/font/Ubuntu/Ubuntu-Light/Ubuntu-Light.eot')
-//     src: url('./style/font/Ubuntu/Ubuntu-Light/Ubuntu-Light.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Light/Ubuntu-Light.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Light/Ubuntu-Light.svg') format('svg')
-//     font-weight: light
-//     font-style: normal
-// @font-face 
-//     font-family: 'ubuntu-medium'
-//     src: url('./style/font/Ubuntu/Ubuntu-Medium/Ubuntu-Medium.eot')
-//     src: url('./style/font/Ubuntu/Ubuntu-Medium/Ubuntu-Medium.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Medium/Ubuntu-Medium.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Medium/Ubuntu-Medium.svg') format('svg')
-//     font-weight: medium
-//     font-style: normal
-// @font-face 
-//     font-family: 'ubuntu-bold'
-//     src: url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.eot')
-//     src: url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.svg') format('svg')
-//     font-weight: medium
-//     font-style: normal
+@font-face 
+    font-family: 'ubuntu-regular'
+    src: url('./style/font/Ubuntu/Ubuntu-Regular/Ubuntu-Regular.eot')
+    src: url('./style/font/Ubuntu/Ubuntu-Regular/Ubuntu-Regular.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Regular/Ubuntu-Regular.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Regular/Ubuntu-Regular.svg') format('svg')
+    font-weight: normal
+    font-style: normal
+@font-face 
+    font-family: 'ubuntu-light'
+    src: url('./style/font/Ubuntu/Ubuntu-Light/Ubuntu-Light.eot')
+    src: url('./style/font/Ubuntu/Ubuntu-Light/Ubuntu-Light.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Light/Ubuntu-Light.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Light/Ubuntu-Light.svg') format('svg')
+    font-weight: light
+    font-style: normal
+@font-face 
+    font-family: 'ubuntu-medium'
+    src: url('./style/font/Ubuntu/Ubuntu-Medium/Ubuntu-Medium.eot')
+    src: url('./style/font/Ubuntu/Ubuntu-Medium/Ubuntu-Medium.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Medium/Ubuntu-Medium.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Medium/Ubuntu-Medium.svg') format('svg')
+    font-weight: medium
+    font-style: normal
+@font-face 
+    font-family: 'ubuntu-bold'
+    src: url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.eot')
+    src: url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.woff')format('woff'), url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.ttf') format('truetype'), url('./style/font/Ubuntu/Ubuntu-Bold/Ubuntu-Bold.svg') format('svg')
+    font-weight: medium
+    font-style: normal
 
 .leftmenu-main
   // display: $flex
@@ -121,7 +121,7 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
         .leftmenu-category-title-name
           margin: $size-null
           padding: $size-null
-          font-family: 'Ubuntu Medium'
+          font-family: 'Ubuntu-Regular'
           font-size: $size-ten * 1.8 + px
                 
 
@@ -131,6 +131,10 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
           margin-top: $size-ten * 0.8 + px
           font-family: 'Ubuntu Light'
 
+.leftmenu-list
+
+  // padding-top: $size-ten
+
 
 .leftmenu-item
   display: $flex
@@ -138,10 +142,18 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
   color: $color-white
   padding-left: $size-hundred * 1.28 + px
   width: $size-hundred * 3.2 - $size-hundred * 1.29 + px
-  height: $size-ten * 4.3 + px
-  font-family: 'ubuntu-regular'
+  height: $size-ten * 4 + px
+  font-family: 'Ubuntu'
   font-size: $size-ten * 1.6 + px
+  
+  &:nth-child(1)
+    padding-top: $size-ten * 2 + px
+  
 
+  .leftmenu-item-text
+    width: 100%
+    // height: $size-ten * 3 + px
+    
   
   &:hover
     color: $color-orange
@@ -164,3 +176,4 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
 
 .active
     background-color: $bg-color-main-active
+

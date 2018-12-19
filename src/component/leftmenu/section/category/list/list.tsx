@@ -23,7 +23,7 @@ export default class List extends React.Component<IProps, IState> {
             return null;
         } else {
             return (
-                <div>
+                <div className="leftmenu-list">
                     {
                         filteredItems.map(
                             (item): JSX.Element => {
